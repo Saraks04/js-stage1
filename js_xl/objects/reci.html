@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="dem">Result</p>
+<script>
+var recip = {
+    'title': 'Soup',
+    'servings': 2,
+    'ingredients': ['bread grumbs', 'pepper', 'salt']
+};
+
+document.getElementById("dem").innerHTML = recip.title;
+document.getElementById("dem").innerHTML = 'Servings: ' + recip.servings;
+document.getElementById("dem").innerHTML ='Ingredients: ';
+for (var j = 0; j < recip.ingredients.length; j++) {
+    document.getElementById("dem").innerHTML =(recip.ingredients[j]);
+}
+</script>
+</body>
+</html>

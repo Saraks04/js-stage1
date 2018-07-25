@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+<p id="demo">Result</p>
+Array.prototype.bubbleSort = function() 
+{
+var sorted = false;
+ while (!sorted) 
+ {
+    sorted = true;
+    for (var m = 0; m < this.length - 1; m++) 
+    {
+      if (this[m] > this[m+1]){
+        var y = this[m+1];
+        this[m+1] = this[m];
+        this[m] = y;
+        sorted = false;
+      }
+    }
+  }
+  return this;
+};
+
+document.getElementById("demo").innerHTML=[8,9,4,-1,-6].bubbleSort();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+<p id="demo">Result</p>
+function circle(radi)
+{
+    this.radius = radi;
+  // area method
+    this.area = function () 
+    {
+        return Math.PI * this.radius * this.radius;
+    };
+  // perimeter method
+    this.perimeter = function ()
+    {
+        return 2*Math.PI*this.radius;
+    };
+}
+var cir = new circle(3);
+document.getElementById("demo").innerHTML='Area =', cir.area().toFixed(2);
+document.getElementById("demo").innerHTML='Perimeter =', cir.perimeter().toFixed(2);
+</script>
+</body>
+</html>

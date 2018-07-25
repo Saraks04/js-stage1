@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo">Result</p>
+<script>
+function person (fname,lname,ag){
+    this.firstName= fname;
+    this.lastName=lname;
+    this.age= ag;
+}
+person.Prototype.state="Andhra";
+person.Prototype.fun= function(){
+    return this.firstName + "" + this.age;};
+document.getElementById("demo").innerHTML = person.firstName+ "resides in" +person.state;
+</script>
+</body>
+</html>
