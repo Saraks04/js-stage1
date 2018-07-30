@@ -1,0 +1,3 @@
+//Ignore from js-stage2
+1.arrayown
+2.regex own
